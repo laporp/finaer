@@ -5,16 +5,36 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="description" content="Mantis is react free admin template build using Vite" />
+    <meta name="description" content="Finaer Backoffice - Sistema de gestión médica" />
     <link rel="apple-touch-icon" href="/logo192.png" />
     <title>Finaer Backoffice</title>
 
     <!-- this is to resolve issue in old safari browser in tablet -->
     <script src="https://cdn.jsdelivr.net/npm/resize-observer-polyfill@1.5.1/dist/ResizeObserver.min.js"></script>
-    <script type="module" crossorigin src="/assets/index-C8ujx45u.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/vendor-D5d5vywP.js">
-    <link rel="modulepreload" crossorigin href="/assets/router-BWB4lwgb.js">
-    <link rel="stylesheet" crossorigin href="/assets/index-CHmbN9l6.css">
+    
+    <!-- GitHub Pages SPA redirect script -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...)
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/finaer/assets/index-CFsdimoh.js"></script>
+    <link rel="modulepreload" crossorigin href="/finaer/assets/vendor-D5d5vywP.js">
+    <link rel="modulepreload" crossorigin href="/finaer/assets/router-BWB4lwgb.js">
+    <link rel="stylesheet" crossorigin href="/finaer/assets/index-DtQd8AIi.css">
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
